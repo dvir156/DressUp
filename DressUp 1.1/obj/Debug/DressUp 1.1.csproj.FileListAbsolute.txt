@@ -1,0 +1,18 @@
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\bin\Debug\Microsoft.Kinect.dll
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\bin\Debug\Microsoft.Kinect.xml
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp 1.1.csprojAssemblyReference.cache
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\MainWindow.g.cs
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\App.g.cs
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\MainWindow.baml
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp_1._1.Properties.Resources.resources
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp 1.1.csproj.GenerateResource.cache
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp 1.1.csproj.CoreCompileInputs.cache
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp 1.1.csproj.CopyComplete
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\bin\Debug\DressUp_1._1.exe.config
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\bin\Debug\DressUp_1._1.exe
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\bin\Debug\DressUp_1._1.pdb
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\App.baml
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp_1._1_MarkupCompile.cache
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp_1._1.g.resources
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp_1._1.exe
+C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\obj\Debug\DressUp_1._1.pdb
