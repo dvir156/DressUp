@@ -11,13 +11,13 @@ namespace BeckEnd.Models
     {
         public int id { get; set; }
         public string name { get; set; }
-        public StreamType garStream { get; set; }
+        public StreamType garment { get; set; }
 
         public Garment(int id, string name, StreamType gar)
         {
             this.id = id;
             this.name = name;
-            this.garStream = gar;
+            this.garment = gar;
         }
 
     }

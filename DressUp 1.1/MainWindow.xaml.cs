@@ -1,4 +1,5 @@
-﻿using Microsoft.Kinect;
+﻿using BeckEnd.Data;
+using Microsoft.Kinect;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,6 +24,8 @@ namespace DressUp_1._1
     {
         #region Members
 
+        private InMemoryDataAccess DataAccess;
+
         Mode _mode = Mode.Color;
 
         KinectSensor _sensor;
@@ -38,6 +41,7 @@ namespace DressUp_1._1
         public MainWindow()
         {
             InitializeComponent();
+            DataAccess = new InMemoryDataAccess();
         }
 
         #endregion
@@ -179,9 +183,11 @@ namespace DressUp_1._1
 
         private void Dressbtn_Click_1(object sender, RoutedEventArgs e)
         {
+            var garment = DataAccess.getCollection();
             _dressbody = true;
             ImageBrush imageBrush = new ImageBrush();
-            imageBrush.ImageSource = new BitmapImage(new Uri(@"C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\DB\3D\2.png", UriKind.Relative));
+            //imageBrush.ImageSource = new BitmapImage(new Uri(@"C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\DB\3D\2.png", UriKind.Relative));
+            imageBrush.ImageSource = garment[0].garment;
             shirt.Background = imageBrush;
         }
     }
