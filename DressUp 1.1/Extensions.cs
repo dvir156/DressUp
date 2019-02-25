@@ -149,7 +149,7 @@ namespace DressUp_1._1
             {
                 canvas.DrawPoint(joint);
             }
-
+            
             canvas.DrawLine(body.Joints[JointType.Head], body.Joints[JointType.Neck]);
             canvas.DrawLine(body.Joints[JointType.Neck], body.Joints[JointType.SpineShoulder]);
             canvas.DrawLine(body.Joints[JointType.SpineShoulder], body.Joints[JointType.ShoulderLeft]);
@@ -186,7 +186,7 @@ namespace DressUp_1._1
             {
                 Width = 20,
                 Height = 20,
-                Fill = new SolidColorBrush(Colors.LightBlue)
+                Fill = new SolidColorBrush(Colors.Blue)
             };
 
             Canvas.SetLeft(ellipse, joint.Position.X - ellipse.Width / 2);

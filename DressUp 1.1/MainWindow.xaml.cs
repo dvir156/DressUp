@@ -136,13 +136,16 @@ namespace DressUp_1._1
                                 }
                                 if(_dressbody)
                                 {
+
                                     IReadOnlyDictionary<JointType, Joint> joints = body.Joints;
                                     Dictionary<JointType, Point> jointPoints = new Dictionary<JointType, Point>();
                                     Joint _spineShoulder = joints[JointType.SpineShoulder];
                                     CameraSpacePoint _spineShoulderpos = _spineShoulder.Position;
-                                    Thickness _spineThickness = new Thickness(_spineShoulder.Position.X*150+700, _spineShoulder.Position.Y*150, _spineShoulder.Position.X * 150-700, _spineShoulder.Position.Y * 150);
+                                    _spineShoulder = _spineShoulder.ScaleTo(canvas.ActualWidth, canvas.ActualHeight);
+                                    Thickness _spineThickness = new Thickness(_spineShoulder.Position.X/2 + _spineShoulder.Position.Z*100 + 100 , (_spineShoulder.Position.Y + (_spineShoulder.Position.Z-0.1)*30)-120 , 0,0);
                                     shirt.Margin = _spineThickness;
-                                    //Thickness(double left, double top, double right, double bottom);
+                                    shirt.Height = -_spineShoulder.Position.Z*125+500;
+                                    shirt.Width = -_spineShoulder.Position.Z * 125+500;
 
                                 }
                             }
