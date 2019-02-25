@@ -26,5 +26,11 @@
                 <ImageBrush/>
             </StackPanel.Background>
         </StackPanel>
+        <Grid Style="{StaticResource GridButtonsStyle}" Margin="10,0,-10.4,79.4" Height="121">
+            <Grid.Background>
+                <SolidColorBrush Color="#7F00FF3A" Opacity="0.7"/>
+            </Grid.Background>
+            <StackPanel Style="{StaticResource StackPanelButtonsStyle}"/>
+        </Grid>
     </Grid>
 </Window>
