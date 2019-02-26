@@ -1,4 +1,5 @@
 ﻿using BeckEnd.Data;
+using HelixToolkit.Wpf;
 using Microsoft.Kinect;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -37,10 +39,22 @@ namespace DressUp_1._1
         #endregion
 
         #region Constructor
-
+        private void Create3DViewPort()
+        {
+            var hVp3D = new HelixViewport3D();
+            var lights = new DefaultLights();
+            var teaPot = new Teapot();
+            hVp3D.Children.Add(lights);
+            hVp3D.Children.Add(teaPot);
+        }
         public MainWindow()
         {
             InitializeComponent();
+            ObjReader CurrentHelixObjReader = new ObjReader();
+            Model3DGroup MyModel = CurrentHelixObjReader.Read(@"C:\Users\dvir1\Downloads\WpfApplicationMove3DModel\shirt\Tshirt.obj");
+            ModelVisual3D v3d = new ModelVisual3D();
+            v3d.Content = MyModel;
+            helixPort.Children.Add(v3d);
             DataAccess = new InMemoryDataAccess();
         }
 
@@ -52,7 +66,7 @@ namespace DressUp_1._1
         {
 
             _sensor = KinectSensor.GetDefault();
-            
+
             if (_sensor != null)
             {
                 _sensor.Open();
@@ -185,13 +199,14 @@ namespace DressUp_1._1
   
 
         private void Dressbtn_Click_1(object sender, RoutedEventArgs e)
-        {
+        { 
             var garment = DataAccess.getCollection();
             _dressbody = true;
             ImageBrush imageBrush = new ImageBrush();
             imageBrush.ImageSource = garment[1].garment;
             shirt.Background = imageBrush;
         }
+        
     }
 
     public enum Mode
