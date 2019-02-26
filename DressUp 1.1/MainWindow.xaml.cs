@@ -50,12 +50,14 @@ namespace DressUp_1._1
         public MainWindow()
         {
             InitializeComponent();
+            DataAccess = new InMemoryDataAccess();
             ObjReader CurrentHelixObjReader = new ObjReader();
-            Model3DGroup MyModel = CurrentHelixObjReader.Read(@"C:\Users\dvir1\Downloads\WpfApplicationMove3DModel\shirt\Tshirt.obj");
+            //static 3d model
+            Model3DGroup MyModel = DataAccess.getGarment("Tshirt.obj");
+            ////////////////////////////////////////////////////////////////
             ModelVisual3D v3d = new ModelVisual3D();
             v3d.Content = MyModel;
             helixPort.Children.Add(v3d);
-            DataAccess = new InMemoryDataAccess();
         }
 
         #endregion

@@ -65,3 +65,52 @@ C:\Users\dvir1\source\repos\DressUp\DressUp 1.1\bin\Debug\SharpDX.DXGI.pdb
 C:\Users\dvir1\source\repos\DressUp\DressUp 1.1\bin\Debug\SharpDX.DXGI.xml
 C:\Users\dvir1\source\repos\DressUp\DressUp 1.1\bin\Debug\SharpDX.Mathematics.pdb
 C:\Users\dvir1\source\repos\DressUp\DressUp 1.1\bin\Debug\SharpDX.Mathematics.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\DressUp_1._1.exe.config
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\DressUp_1._1.exe
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\DressUp_1._1.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\Cyotek.Drawing.BitmapFont.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.Wpf.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.Wpf.SharpDX.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\Microsoft.Kinect.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.D3DCompiler.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct2D1.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct3D11.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct3D9.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.DXGI.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Mathematics.dll
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\Cyotek.Drawing.BitmapFont.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.Wpf.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.Wpf.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.Wpf.SharpDX.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\HelixToolkit.Wpf.SharpDX.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\Microsoft.Kinect.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.D3DCompiler.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.D3DCompiler.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct2D1.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct2D1.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct3D11.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct3D11.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct3D9.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Direct3D9.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.DXGI.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.DXGI.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Mathematics.pdb
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\bin\Debug\SharpDX.Mathematics.xml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp 1.1.csprojAssemblyReference.cache
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\MainWindow.baml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\App.baml
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\MainWindow.g.cs
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\App.g.cs
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp_1._1_MarkupCompile.cache
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp_1._1.g.resources
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp_1._1.Properties.Resources.resources
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp 1.1.csproj.GenerateResource.cache
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp 1.1.csproj.CoreCompileInputs.cache
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp 1.1.csproj.CopyComplete
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp_1._1.exe
+D:\collageOfMenagemant\3thYear\simesterA\פרוייקט גמר\DressUp\DressUp 1.1\obj\Debug\DressUp_1._1.pdb

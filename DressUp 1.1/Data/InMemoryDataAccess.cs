@@ -1,5 +1,6 @@
 ﻿using BackEnd.InMemoryDB;
 using BeckEnd.Models;
+using HelixToolkit.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 
 namespace BeckEnd.Data
 {
@@ -25,9 +27,14 @@ namespace BeckEnd.Data
             return pictureCollection;
         }
 
-        public BitmapImage getGarment(string garName)
+        public Model3DGroup getGarment(string garName)
         {
-            return streamToBitmapImage(db.getGarment(garName).garment);
+            return streamToModel3DGroup(db.getGarment(garName).garment);
+        }
+
+        private Model3DGroup streamToModel3DGroup(FileStream stream)
+        {
+            return new ObjReader().Read(stream);
         }
 
         private BitmapImage streamToBitmapImage(FileStream stream)
