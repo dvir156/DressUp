@@ -1,4 +1,5 @@
 ﻿using BeckEnd.Data;
+using BeckEnd.Models;
 using HelixToolkit.Wpf;
 using Microsoft.Kinect;
 using System;
@@ -27,7 +28,9 @@ namespace DressUp_1._1
         #region Members
 
         private InMemoryDataAccess DataAccess;
-
+        private List<Button> Shirts = new List<Button>();
+        private int shirtsLocation = 0;
+        private List<Garment<BitmapImage>> mycollection;
         Mode _mode = Mode.Color;
 
         KinectSensor _sensor;
@@ -55,7 +58,16 @@ namespace DressUp_1._1
             ModelVisual3D v3d = new ModelVisual3D();
             v3d.Content = MyModel;
             helixPort.Children.Add(v3d);
+
             DataAccess = new InMemoryDataAccess();
+            Shirts.Add(shirt1);
+            Shirts.Add(shirt2);
+            Shirts.Add(shirt3);
+            Shirts.Add(shirt4);
+
+            mycollection = DataAccess.getCollection();
+
+            Load_Shirts(shirtsLocation);
         }
 
         #endregion
@@ -86,6 +98,21 @@ namespace DressUp_1._1
             if (_sensor != null)
             {
                 _sensor.Close();
+            }
+        }
+        void Load_Shirts(int num)
+        {
+            for ( num = num*4 ; num < num + 4; num++)
+            {
+                if (!(num > mycollection.Count))
+                {
+                    var garment = DataAccess.getCollection();
+                    ImageBrush imageBrush = new ImageBrush();
+                    imageBrush.ImageSource = garment[num].garment;
+                    Shirts[num].Background = imageBrush;
+                }
+                else
+                    shirtsLocation = 0;
             }
         }
 
@@ -193,10 +220,13 @@ namespace DressUp_1._1
             _displayBody = !_displayBody;
         }
 
-
+        private void Collection_Click(object sender, RoutedEventArgs e)
+        {
+            CollectionShirts.Visibility = new Visibility();
+        }
         #endregion
 
-  
+
 
         private void Dressbtn_Click_1(object sender, RoutedEventArgs e)
         { 
@@ -206,7 +236,36 @@ namespace DressUp_1._1
             imageBrush.ImageSource = garment[1].garment;
             shirt.Background = imageBrush;
         }
-        
+
+        private void shirt1_Click(object sender, RoutedEventArgs e)
+        {
+            _dressbody = true;
+            shirt.Background = shirt1.Background;
+        }
+
+        private void shirt2_Click(object sender, RoutedEventArgs e)
+        {
+            _dressbody = true;
+            shirt.Background = shirt2.Background;
+        }
+
+        private void shirt3_Click(object sender, RoutedEventArgs e)
+        {
+            _dressbody = true;
+            shirt.Background = shirt3.Background;
+        }
+
+        private void shirt4_Click(object sender, RoutedEventArgs e)
+        {
+            _dressbody = true;
+            shirt.Background = shirt4.Background;
+        }
+
+        private void right_Click(object sender, RoutedEventArgs e)
+        {
+            shirtsLocation++;
+            Load_Shirts(shirtsLocation);
+        }
     }
 
     public enum Mode
