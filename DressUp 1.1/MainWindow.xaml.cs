@@ -29,7 +29,7 @@ namespace DressUp_1._1
 
         private InMemoryDataAccess DataAccess;
         private List<Button> Shirts = new List<Button>();
-        private int shirtsLocation = 0;
+        private int shirtsLocation = 3;
         private List<Garment<BitmapImage>> mycollection;
         Mode _mode = Mode.Color;
 
@@ -75,7 +75,7 @@ namespace DressUp_1._1
 
             mycollection = DataAccess.getCollection();
 
-            Load_Shirts(shirtsLocation);
+            Load_Shirts();
         }
 
         #endregion
@@ -108,16 +108,14 @@ namespace DressUp_1._1
                 _sensor.Close();
             }
         }
-        void Load_Shirts(int num)
+       void Load_Shirts()
         {
             var garment = DataAccess.getCollection();
-            for ( int j = num ; j < num+4; j++)
+            for (int j = 3; j >= 0; j--)
             {
-
                 ImageBrush imageBrush = new ImageBrush();
-                imageBrush.ImageSource = garment[j% garment.Count].garment;
-                Shirts[j%4].Background = imageBrush;
-  
+                imageBrush.ImageSource = garment[3-j].garment;
+                Shirts[j].Background = imageBrush;
             }
         }
 
@@ -275,7 +273,16 @@ namespace DressUp_1._1
         private void right_Click(object sender, RoutedEventArgs e)
         {
             shirtsLocation++;
-            Load_Shirts(shirtsLocation);
+            var garment = DataAccess.getCollection();
+            shirtsLocation = shirtsLocation % garment.Count;
+
+            for (int j = 3; j > 0; j--)
+            {
+                Shirts[j].Background = Shirts[j - 1].Background;
+            }
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = garment[shirtsLocation].garment;
+            Shirts[0].Background = imageBrush;
         }
     }
 
