@@ -21,7 +21,7 @@ namespace BackEnd.InMemoryDB
                 return db;
             }
         }
-        private const string containing_folder = @"C:\Users\dvir1\source\repos\DressUp 1.1\DressUp 1.1\DB";
+        private const string containing_folder = @"..\..\DB";
         private List<Garment<FileStream>> collectionPreview = new List<Garment<FileStream>>();
         private Dictionary<string, Garment<FileStream>> collection = new Dictionary<string, Garment<FileStream>>();
 

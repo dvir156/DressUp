@@ -53,13 +53,15 @@ namespace DressUp_1._1
         public MainWindow()
         {
             InitializeComponent();
+            DataAccess = new InMemoryDataAccess();
             ObjReader CurrentHelixObjReader = new ObjReader();
-            Model3DGroup MyModel = CurrentHelixObjReader.Read(@"C:\Users\dvir1\Downloads\WpfApplicationMove3DModel\shirt\Tshirt.obj");
             ModelVisual3D v3d = new ModelVisual3D();
+            //static 3d model
+            Model3DGroup MyModel = DataAccess.getGarment("Tshirt.obj");
+            ////////////////////////////////////////////////////////////////
+
             v3d.Content = MyModel;
             helixPort.Children.Add(v3d);
-
-            DataAccess = new InMemoryDataAccess();
             Shirts.Add(shirt1);
             Shirts.Add(shirt2);
             Shirts.Add(shirt3);
@@ -104,7 +106,7 @@ namespace DressUp_1._1
         {
             for ( num = num*4 ; num < num + 4; num++)
             {
-                if (!(num > mycollection.Count))
+                if (num < mycollection.Count)
                 {
                     var garment = DataAccess.getCollection();
                     ImageBrush imageBrush = new ImageBrush();
