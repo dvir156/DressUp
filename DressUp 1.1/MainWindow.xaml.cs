@@ -52,6 +52,8 @@ namespace DressUp_1._1
         }
         public MainWindow() { 
             InitializeComponent();
+            shirt.Width = 0.01;
+            shirt.Height = 0.01;
             DataAccess = new InMemoryDataAccess();
             ObjReader CurrentHelixObjReader = new ObjReader();
             ModelVisual3D v3d = new ModelVisual3D();
@@ -108,18 +110,14 @@ namespace DressUp_1._1
         }
         void Load_Shirts(int num)
         {
-            int j = num;
-            for ( num = num*4 ; num < j + 4; num++)
+            var garment = DataAccess.getCollection();
+            for ( int j = num ; j < num+4; j++)
             {
-                if (num < mycollection.Count)
-                {
-                    var garment = DataAccess.getCollection();
-                    ImageBrush imageBrush = new ImageBrush();
-                    imageBrush.ImageSource = garment[num].garment;
-                    Shirts[num%4].Background = imageBrush;
-                }
-                else
-                    shirtsLocation = 0;
+
+                ImageBrush imageBrush = new ImageBrush();
+                imageBrush.ImageSource = garment[j% garment.Count].garment;
+                Shirts[j%4].Background = imageBrush;
+  
             }
         }
 
@@ -229,7 +227,8 @@ namespace DressUp_1._1
 
         private void Collection_Click(object sender, RoutedEventArgs e)
         {
-            CollectionShirts.Visibility = new Visibility();
+            CollectionShirts.Visibility = 0;
+            
         }
         #endregion
 
@@ -246,24 +245,29 @@ namespace DressUp_1._1
 
         private void shirt1_Click(object sender, RoutedEventArgs e)
         {
+            
+            CollectionShirts.Visibility = Visibility.Hidden;
             _dressbody = true;
             shirt.Background = shirt1.Background;
         }
 
         private void shirt2_Click(object sender, RoutedEventArgs e)
         {
+            CollectionShirts.Visibility = Visibility.Hidden;
             _dressbody = true;
             shirt.Background = shirt2.Background;
         }
 
         private void shirt3_Click(object sender, RoutedEventArgs e)
         {
+            CollectionShirts.Visibility = Visibility.Hidden;
             _dressbody = true;
             shirt.Background = shirt3.Background;
         }
 
         private void shirt4_Click(object sender, RoutedEventArgs e)
         {
+            CollectionShirts.Visibility = Visibility.Hidden;
             _dressbody = true;
             shirt.Background = shirt4.Background;
         }
