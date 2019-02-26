@@ -50,12 +50,16 @@ namespace DressUp_1._1
             hVp3D.Children.Add(lights);
             hVp3D.Children.Add(teaPot);
         }
-        public MainWindow()
-        {
+        public MainWindow() { 
             InitializeComponent();
             DataAccess = new InMemoryDataAccess();
             ObjReader CurrentHelixObjReader = new ObjReader();
             ModelVisual3D v3d = new ModelVisual3D();
+            BitmapImage logo = new BitmapImage();
+            logo.BeginInit();
+            logo.UriSource = new Uri(@"..\..\DB\arrow.png", UriKind.RelativeOrAbsolute);
+            logo.EndInit();
+            arrow.ImageSource = logo;
             //static 3d model
             Model3DGroup MyModel = DataAccess.getGarment("Tshirt.obj");
             ////////////////////////////////////////////////////////////////
@@ -104,14 +108,15 @@ namespace DressUp_1._1
         }
         void Load_Shirts(int num)
         {
-            for ( num = num*4 ; num < num + 4; num++)
+            int j = num;
+            for ( num = num*4 ; num < j + 4; num++)
             {
                 if (num < mycollection.Count)
                 {
                     var garment = DataAccess.getCollection();
                     ImageBrush imageBrush = new ImageBrush();
                     imageBrush.ImageSource = garment[num].garment;
-                    Shirts[num].Background = imageBrush;
+                    Shirts[num%4].Background = imageBrush;
                 }
                 else
                     shirtsLocation = 0;

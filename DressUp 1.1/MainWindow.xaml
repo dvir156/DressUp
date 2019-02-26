@@ -39,7 +39,7 @@
                 <h:Teapot x:Name="tea" Visible="False"/>
             </h:HelixViewport3D>
 
-            <Grid x:Name="CollectionShirts" HorizontalAlignment="Left" Height="174" Margin="0,570,0,0" VerticalAlignment="Top" Width="1904">
+            <Grid x:Name="CollectionShirts" HorizontalAlignment="Left" Height="174" Margin="0,570,0,0" VerticalAlignment="Top" Width="1904" Visibility="Hidden">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="White" Offset="0"/>
@@ -47,30 +47,14 @@
                     </LinearGradientBrush>
                 </Grid.Background>
 
-                <StackPanel Style="{StaticResource StackPanelButtonsStyle}" Orientation="Horizontal">
-                    <Button x:Name="shirt1" Content="" HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt1_Click">
+                <StackPanel Style="{StaticResource StackPanelButtonsStyle}" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="shirt1" Content="" HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt1_Click"/>
+                    <Button x:Name="shirt2"  HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt2_Click"/>
+                    <Button x:Name="shirt3" HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt3_Click"/>
+                    <Button x:Name="shirt4"  HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt4_Click"/>
+                    <Button x:Name="right"   HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Height="170" Click="right_Click">
                         <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\dvir1\Pictures\2.png"/>
-                        </Button.Background>
-                    </Button>
-                    <Button x:Name="shirt2"  HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt2_Click">
-                        <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\dvir1\Pictures\2.png"/>
-                        </Button.Background>
-                    </Button>
-                    <Button x:Name="shirt3" HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt3_Click">
-                        <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\dvir1\Pictures\2.png"/>
-                        </Button.Background>
-                    </Button>
-                    <Button x:Name="shirt4"  HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Top" Width="100" Height="170" Click="shirt4_Click">
-                        <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\dvir1\Pictures\2.png"/>
-                        </Button.Background>
-                    </Button>
-                    <Button x:Name="right"  HorizontalAlignment="Left" Margin="0,0,480,0" VerticalAlignment="Top" Width="100" Height="170" Click="right_Click">
-                        <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\dvir1\Pictures\arrow.png"/>
+                            <ImageBrush x:Name="arrow"/>
                         </Button.Background>
                     </Button>
                 </StackPanel>
